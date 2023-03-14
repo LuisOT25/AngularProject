@@ -13,7 +13,12 @@ export class Automoviles implements OnInit{
 
   }
   ngOnInit(): void {
-    this.listaAtumoviles = this.autoService.getAutomoviles();
+
+    this.autoService.getAutomoviles().subscribe(lista=>{
+      console.log('LISTA', lista)
+      this.listaAtumoviles = lista
+    })
+    console.log('DESPUES DE SUSCRIBE')
   }
 
 }
