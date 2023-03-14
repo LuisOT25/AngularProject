@@ -1,0 +1,22 @@
+<div>
+  <h2>Nuevo Automovil</h2>
+  <table>
+    <tr>
+      <td>Placas:</td>
+      <td><input type="text" [(ngModel)]="automovil.placas"></td>
+    </tr>
+    <tr>
+      <td>Modelo:</td>
+      <td><input type="text" [(ngModel)]="automovil.modelo"></td>
+    </tr>
+    <tr>
+      <td>Marca:</td>
+      <td><input type="text" [(ngModel)]="automovil.marca"></td>
+    </tr>
+    <tr>
+      <td>Color:</td>
+      <td><input type="text" [(ngModel)]="automovil.color"></td>
+    </tr>
+  </table>
+  <button (click)="guardar()">Guardar</button>
+</div>

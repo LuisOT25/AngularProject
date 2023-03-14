@@ -8,16 +8,17 @@
       <tr>
         <th>Placas</th>
         <th>Marca</th>
-        <th>Modelo</th>
-        <th>Color</th>
+        <th>Detalle</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let auto of listaAtumoviles">
         <td>{{auto.placas}}</td>
         <td>{{auto.marca}}</td>
-        <td>{{auto.modelo}}</td>
-        <td>{{auto.color}}</td>
+
+        <td>
+          <button (click)="verDetalle(auto.placas)">Detalle</button>
+        </td>
       </tr>
     </tbody>
   </table>

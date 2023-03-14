@@ -19,5 +19,13 @@
       <td>Color:</td>
       <td>{{auto.color}}</td>
     </tr>
+    <tr>
+      <td>Cliente: </td>
+      <td>
+        {{auto.cliente?.nombre}} desde:
+        {{auto.cliente?.fechaRegistro | date:'short'}}
+      </td>
+    </tr>
   </table>
+  <button ><a href="http://localhost:4200/automoviles">volver</a></button>
 </div>

@@ -37,7 +37,7 @@ export class Automovilservice {
 
   crearAutomovil(auto:Automovil): Observable<Automovil>
   {
-    return this.http.post<Automovil>(this.BACKEND_URL, auto)
+    return this.http.post<Automovil>(this.BACKEND_URL+'/vehiculos', auto)
   }
 
 }
