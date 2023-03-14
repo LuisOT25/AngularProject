@@ -1,0 +1,13 @@
+<div>
+    <h2>Ejemplo Basico</h2>
+    <div>{{mensaje}}</div>
+    <div>{{numero}}</div>
+    <div>Contador: {{contador}}</div>
+    <button (click)="incrementarContador()"><h2>+</h2></button>
+    <button (click)="decrementarContador()" *ngIf="contador > 0"><h2>-</h2></button>
+    <div>
+      <ol>
+        <li *ngFor="let letra of datos">{{letra}}</li>
+      </ol>
+    </div>
+</div>
